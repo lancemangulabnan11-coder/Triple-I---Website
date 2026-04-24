@@ -48,6 +48,9 @@
             display: flex;
             gap: 20px;
             margin: 20px 0;
+            overflow-x: auto;      /* Enables horizontal scroll when needed */
+            white-space: nowrap;   /* Prevents items from wrapping to a new line */
+            width: 100%;           /* Sets a boundary for the container */
         }
 
         .box {
@@ -55,8 +58,10 @@
             height: 120px;
             border: 2px solid black;
             transition-duration: 0.4s;
-            
+            flex: 0 0 auto;        /* Prevents items from shrinking or growing */
+            width: 300px;          /* Width for each item */
         }
+        
         
 
         /* Grid (e-waste) */
@@ -123,9 +128,12 @@
 
         <!-- Boxes -->
         <div class="row">
-            <div class="box" id="box1"><a href="Devices_Screens_and_Monitor"></a></div>
-            <div class="box" id="box2"></div>
-            <div class="box" id="box3"></div>
+            <a href="Devices_Screens_and_Monitor" class="box" id="box1"></a>
+            <a href="" class="box" id="box2"></a>
+            <a href="" class="box" id="box3"></a>
+            <a href="Devices_Screens_and_Monitor" class="box" id="box4"></a>
+            <a href="" class="box" id="box5"></a>
+            <a href="" class="box" id="box6"></a>
         </div>
 
         <h3>E-waste devices</h3>
