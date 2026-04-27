@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+                margin: 0;
+                
+        }
+
+        /* Top section */
+        .top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            border: 1px solid black;
+            margin-bottom: 5%;
+        }
+
+        /* BOttom section */
+        .bottom {
+            display: flex; /* makes children horizontal */
+            justify-content: center;
+            align-items: center;
+            background-image: url(.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            border: 1px solid black;
+            width: 250px;
+        }
+        #MiddleMargin {
+            margin: 0 5% ; /* adds horizontal margin to the middle box */
+        }
+    </style>
+</head>
+<body>
+    <!-- TOP DIV -->
+    <div class="top">
+        Device Category
+    </div>
+
+    <!-- BOTTOM 1x3 -->
+    <div class="bottom">
+        <div class="box">Device 1</div>
+        <div class="box" id="MiddleMargin">Device 2</div>
+        <div class="box">Device 3</div>
+    </div>
+
+</body>
+</html>
