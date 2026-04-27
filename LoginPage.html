@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - E-Waste Hub PH</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #ece9e9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url();
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 92%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: #2c7be5;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #1a5edb;
+    }
+
+    .toggle {
+        margin-top: 15px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #2c7be5;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .note {
+        font-size: 12px;
+        color: gray;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    
+    <!-- LOGIN -->
+    <div id="loginDiv">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username (optional)">
+        <input type="password" placeholder="Password (optional)">
+        <button onclick="login()">Login</button>
+
+        <div class="toggle" onclick="showSignup()">Create account </div>
+    </div>
+
+    <!-- SIGN UP -->
+    <div id="signupDiv" class="hidden">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Nickname (optional)">
+        <input type="password" placeholder="Password (optional)">
+        <button onclick="signup()">Sign Up</button>
+
+        <div class="note">No personal info required ( •̀ ω •́ )✧</div>
+
+        <div class="toggle" onclick="showLogin()">Back to login</div>
+    </div>
+
+</div>
+
+<script>
+    function showSignup() {
+        document.getElementById("loginDiv").classList.add("hidden");
+        document.getElementById("signupDiv").classList.remove("hidden");
+    }
+
+    function showLogin() {
+        document.getElementById("signupDiv").classList.add("hidden");
+        document.getElementById("loginDiv").classList.remove("hidden");
+    }
+
+    function login() {
+        alert("Logged in! (╹ڡ╹ ) (demo only)");
+        window.location.href = "MainPage.html";
+    }
+
+    function signup() {
+        alert("Account created anonymously (⌐■_■) (demo only)");
+    }
+</script>
+
+</body>
+</html>
