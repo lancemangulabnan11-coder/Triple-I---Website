@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Document</title>
     <style>
 
-        .navbar {
+        
+        .navibar {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -14,7 +16,7 @@
             color: white;
             padding: 15px;
         }
-        .navbar a {
+        a {
             color: #7D5842;
             text-decoration: none;
         }
@@ -24,30 +26,30 @@
             padding: 5px 10px;
             margin-right: 10px;
         }
-        .navbar1 :hover{
+        .navibar1 :hover{
             
             color: white;
             
         }
-        .navbar2 a:hover{
+        .navibar2 a:hover{
             background: #7D5842;
             color: white;
             border-radius: 10px;
             transition: 0.25s;
         }
-        .navbar3{
+        .navibar3{
             border: none;
             padding: 5px 10px;
             background: none;}
-        .navbar3:hover{
+        .navibar3:hover{
             background: #7D5842;
             color: white;
             border-radius: 10px;
             transition: 0.25s;
-        }
             body {
                 margin: 0;
-                
+            }
+
         }
 
         /* Top section */
@@ -56,7 +58,7 @@
             justify-content: center;
             align-items: center;
             height: 150px;
-            border: 1px solid black;
+            
             margin-bottom: 5%;
         }
 
@@ -66,6 +68,15 @@
             padding: 0px;
             margin: 0px;
             overflow: hidden;
+        }
+
+        .navbar {
+            display: grid;
+            grid-template-columns: repeat(6, 100px); 
+            grid-auto-rows: auto;
+            max-width: 100%; 
+            margin: 0 auto;
+            gap: 20px;
         }
 
         .navbar a {
@@ -82,9 +93,9 @@
             transition: background-color 0.3s ease;
         }
         .navbar li {
-            float:left;
-            margin-left: 10%;
+            
             overflow-x: auto;
+
         }
         main {
             margin-left: 10px;
@@ -138,20 +149,23 @@
     </style>
 </head>
 <body>
-    <div class="navbar" >
-        <div class="navbar1"><a href="MainPage.html">E-Waste Hub PH</a></div>
-        <div class="navbar2"><a href="LoginPage.html" id="NB1">Sign Up <i class="fa-regular fa-user"></i></a>
-        <button onclick="AlertSetting()" class="navbar3"><i class="fa-solid fa-gear"></i></button></div>
+    <div class="navibar" >
+        <div class="navibar1"><a href="MainPage.html">E-Waste Hub PH</a></div>
+        <div class="navibar2"><a href="LoginPage.html" id="NB1">Sign Up <i class="fa-regular fa-user"></i></a>
+        <button onclick="AlertSetting()" class="navibar3"><i class="fa-solid fa-gear"></i></button></div>
     </div>
     <!-- TOP DIV -->
     <div class="top">
-        Device Category
+        Mobile Devices
     </div>
 
     <div class="nav_container">
 
         <nav class="navbar">
             <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
@@ -167,7 +181,7 @@
 
     <!-- BOTTOM 1x3 -->
     <div class="bottom">
-        <a class="box" id="Dev1">Device 1</a>
+        <a class="box" id="Dev1" href="">Device 1</a>
         <a class="box" id="Dev2">Device 2</a>
         <a class="box" id="Dev3">Device 3</a>
     </div>
