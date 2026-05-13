@@ -1,1 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Computer Info</title>
 
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #EEE8DC, #F5F1E8);
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        /* NAVBAR */
+        .navibar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #E8E0D5;
+            padding: 15px;
+        }
+
+        a {
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        #NB1 {
+            border: 1px solid #0F0F0F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .navibar2 a:hover {
+            background: #0F0F0F;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+
+        .navibar3 {
+            border: none;
+            background: none;
+            width: 29px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .navibar3:hover {
+            background: #0F0F0F;
+            color: white;
+            transition: 0.25s;
+        }
+
+        /* TITLE */
+        .top {
+            text-align: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CLEAN LAYOUT */
+        .content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 250px;
+            height: 350px;
+            background-image: url(code.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #QR-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 120px;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navibar">
+        <div><a href="MainPage.html">E-Waste Hub PH</a></div>
+
+        <div class="navibar2">
+            <a href="LoginPage.html" id="NB1">
+                Sign Up <i class="fa-regular fa-user"></i>
+            </a>
+            <button onclick="AlertSetting()" class="navibar3">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="top">
+        <h1>Desktop Computer</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+
+            <!-- TEXT -->
+            <div class="text">
+
+                
+                
+                <h2>Device Information</h2>
+                <p>
+                   A smartphone is a hand device that combines the functionality of a cellular telephone with a computer and a camera. Smartphones debuted in 1994 with IBM's model and later spread to many other companies such as Apple and Samsung. Initially for calls and email, smartphones now enable internet access, gaming, texting, and photography, along with calls and emails. They transformed the telecommunications sector and shifted consumer behavior.
+                </p>
+                    <h2>How to Dispose</h2>
+                <p>
+                    Old or damaged mobile phones cannot just be thrown in the bin. This is in part due to the chemicals contained in phone batteries that would be harmful to the environment if released into landfill or water systems. But equally, disposing of your phone this way is a waste of valuable materials. Instead, find an appropriate place to dispose your phone.
+                </p>
+
+                <h2>How to Recycle</h2>
+                <p>
+                    You have two main options when it comes to recycling your old phones: either recycle them directly yourself, or hand them to someone or an organization who can handle the recycling o your behalf. You can also:
+
+
+                    Check your local curbside recycling, sometimes they accept old electronics.
+
+                    Submit your old phone to your local recycling point.
+
+                    Donate your old phone to a charity shop, they will be able to earn money from recycling the raw materials.
+
+                    Donate to a school or a community group.
+
+                    Return  your old phone to its manufacturer, who can recycle the parts into new devices.
+                </p>
+                <h2>Electrical "Fixer" Place</h2>
+                <p>
+                    Smartphone fixer place:
+
+                   Service - Mobile phone repair
+
+                   Location - Pandacaqui, Mexico, pampangga
+
+                   Number: 0936-666-2644
+ 
+
+                   Service - Mobile phone repair
+
+                   Location - District 12 blk 91 lot 26, Pandacaqui Resettlement Road, Mexico, 2021 pampangga
+
+                   Number - 0967-522-2318
+         </p>
+
+                <h2>RRL</h2>
+                <p>
+               Frankenfield, J. (2020, December 27). Smartphone. Investopedia. https://www.investopedia.com/terms/s/smartphone.asp
+
+               Editorial. (2022, March 16). Mobile phone disposal | Everphone. Everphone. https://everphone.com/en/blog/phone-disposal/
+
+               Editorial. (2022, April 25). Disposal of old phones: Recycling your smartphone. Everphone. https://everphone.com/en/blog/old-phone-disposal/
+                </p>
+
+            <!-- IMAGE -->
+            <div class="image"></div>
+
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="QR-popup" class="hidden">
+        <button onclick="document.getElementById('QR-popup').classList.add('hidden')">
+            Close
+        </button>
+    </div>
+
+    <script>
+        function AlertSetting() {
+            alert("This is a demo, setting is coming soon!");
+            document.getElementById("QR-popup").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Computer Info</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #EEE8DC, #F5F1E8);
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        /* NAVBAR */
+        .navibar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #E8E0D5;
+            padding: 15px;
+        }
+
+        a {
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        #NB1 {
+            border: 1px solid #0F0F0F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .navibar2 a:hover {
+            background: #0F0F0F;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+
+        .navibar3 {
+            border: none;
+            background: none;
+            width: 29px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .navibar3:hover {
+            background: #0F0F0F;
+            color: white;
+            transition: 0.25s;
+        }
+
+        /* TITLE */
+        .top {
+            text-align: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CLEAN LAYOUT */
+        .content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 250px;
+            height: 350px;
+            background-image: url(code.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #QR-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 120px;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navibar">
+        <div><a href="MainPage.html">E-Waste Hub PH</a></div>
+
+        <div class="navibar2">
+            <a href="LoginPage.html" id="NB1">
+                Sign Up <i class="fa-regular fa-user"></i>
+            </a>
+            <button onclick="AlertSetting()" class="navibar3">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="top">
+        <h1>Desktop Computer</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+
+            <!-- TEXT -->
+            <div class="text">
+
+                
+                
+                <h2>Device Information</h2>
+                <p>
+                   A smartphone is a hand device that combines the functionality of a cellular telephone with a computer and a camera. Smartphones debuted in 1994 with IBM's model and later spread to many other companies such as Apple and Samsung. Initially for calls and email, smartphones now enable internet access, gaming, texting, and photography, along with calls and emails. They transformed the telecommunications sector and shifted consumer behavior.
+                </p>
+                    <h2>How to Dispose</h2>
+                <p>
+                    Old or damaged mobile phones cannot just be thrown in the bin. This is in part due to the chemicals contained in phone batteries that would be harmful to the environment if released into landfill or water systems. But equally, disposing of your phone this way is a waste of valuable materials. Instead, find an appropriate place to dispose your phone.
+                </p>
+
+                <h2>How to Recycle</h2>
+                <p>
+                    You have two main options when it comes to recycling your old phones: either recycle them directly yourself, or hand them to someone or an organization who can handle the recycling o your behalf. You can also:
+
+
+                    Check your local curbside recycling, sometimes they accept old electronics.
+
+                    Submit your old phone to your local recycling point.
+
+                    Donate your old phone to a charity shop, they will be able to earn money from recycling the raw materials.
+
+                    Donate to a school or a community group.
+
+                    Return  your old phone to its manufacturer, who can recycle the parts into new devices.
+                </p>
+                <h2>Electrical "Fixer" Place</h2>
+                <p>
+                    Smartphone fixer place:
+
+                   Service - Mobile phone repair
+
+                   Location - Pandacaqui, Mexico, pampangga
+
+                   Number: 0936-666-2644
+ 
+
+                   Service - Mobile phone repair
+
+                   Location - District 12 blk 91 lot 26, Pandacaqui Resettlement Road, Mexico, 2021 pampangga
+
+                   Number - 0967-522-2318
+         </p>
+
+                <h2>RRL</h2>
+                <p>
+               Frankenfield, J. (2020, December 27). Smartphone. Investopedia. https://www.investopedia.com/terms/s/smartphone.asp
+
+               Editorial. (2022, March 16). Mobile phone disposal | Everphone. Everphone. https://everphone.com/en/blog/phone-disposal/
+
+               Editorial. (2022, April 25). Disposal of old phones: Recycling your smartphone. Everphone. https://everphone.com/en/blog/old-phone-disposal/
+                </p>
+
+            <!-- IMAGE -->
+            <div class="image"></div>
+
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="QR-popup" class="hidden">
+        <button onclick="document.getElementById('QR-popup').classList.add('hidden')">
+            Close
+        </button>
+    </div>
+
+    <script>
+        function AlertSetting() {
+            alert("This is a demo, setting is coming soon!");
+            document.getElementById("QR-popup").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
