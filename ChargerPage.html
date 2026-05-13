@@ -1,1 +1,460 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Computer Info</title>
 
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #EEE8DC, #F5F1E8);
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        /* NAVBAR */
+        .navibar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #E8E0D5;
+            padding: 15px;
+        }
+
+        a {
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        #NB1 {
+            border: 1px solid #0F0F0F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .navibar2 a:hover {
+            background: #0F0F0F;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+
+        .navibar3 {
+            border: none;
+            background: none;
+            width: 29px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .navibar3:hover {
+            background: #0F0F0F;
+            color: white;
+            transition: 0.25s;
+        }
+
+        /* TITLE */
+        .top {
+            text-align: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CLEAN LAYOUT */
+        .content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 250px;
+            height: 350px;
+            background-image: url(code.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #QR-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 120px;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navibar">
+        <div><a href="MainPage.html">E-Waste Hub PH</a></div>
+
+        <div class="navibar2">
+            <a href="LoginPage.html" id="NB1">
+                Sign Up <i class="fa-regular fa-user"></i>
+            </a>
+            <button onclick="AlertSetting()" class="navibar3">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="top">
+        <h1>Computer</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+
+            <!-- TEXT -->
+            <div class="text">
+
+                
+                
+                <h2>Device Information</h2>
+                <p>
+                    Computers are machines that process information. Early computers were primarily used to solve mathematical problems, but their capabilities have expanded significantly over time. Today, they can perform complex tasks such as predicting weather patterns, managing communication systems, and controlling advanced machinery like automobiles and robotic surgical tools. Computers have also become more affordable, allowing them to be embedded in everyday appliances, making devices like dryers and rice cookers “smart.” However, computers also have limitations, some of which are theoretical. Despite major advancements in data processing and artificial intelligence (AI), they still lack the ability to think in a fully holistic and human-like way. While computers can imitate human behavior, this imitation cannot fully replace the human element, especially in social interactions.
+
+                </p>
+                    <h2>How to Dispose</h2>
+                <p>
+                    Nowadays, the technology have been rapidly evolving it's own landscape, computers had become obsolete at an alarming rate. This surge in electronic waste or e-waste, poses a significant environmental challenge. In disposing a computer is crucial in reducing landfill waste and recovering valuable resources. However, with concerns of people about data security and environmental impact, it's essential to understand the best practices for disposing of old computers. Ways of disposing of computer is:
+                    Retailers: Many retailers, includes the electronic stores and department stores, have a program of e-waste recycling. Here, you can drop off your old computers at their stores for it to be recycled.
+                    Charitable Organizations: If somehow your computer is still working, you can also donate it. There are many non-profit organizations that are refurbish donated computers and distribute them in schools, libraries, or low-income individuals.
+                    Refurbishment: If your computer is old but still has functional or working, it can be refurbished and resold. This involves by replacing worn-out components and reinstalling the operating system.
+                    Attempt to sell it: You can try selling on websites like Craigslist, eBay, Mercari, or Facebook Marketplace. All you'll need is the computer's specs and a few pictures. Even if your computer is really old, you may still find a buyer online. Some people specifically look for older, "vintage" computer parts.
+                </p>
+
+                <h2>How to Recycle</h2>
+                <p>
+                    In e-cycling, it's easier than it might seem. There are governments that supported recycling services, charities, and even independent businesses that can take your old electronics. However, they also unlikely to accept any hazardous or dangerous items. There are many ways on how to recycle the old computer such as:
+                    Electronics Recyclers: There are many specialized electronics recycling companies that offers services for disposing your computer. They often provide a free or even low-cost pickup options and ensure that the computers are recycled responsibly.
+                    Planet Partners program: Free recycling for computers and printers. Many electronics retailers and manufacturers accept laptops for recycling through similar takeback programs, making it easy to recycle used devices.
+                     At a City Service Department: Residents of the 59 communities in Cuyahoga County can recycle unwanted computer equipment and peripherals at the city service department throughout the year. See more about computer recycling in your community. Many cities offer year-round collections and some hold seasonal collection events, usually in spring or fall. Do not place your computer in curbside recycling.
+                </p>
+                <h2>Electrical "Fixer" Place</h2>
+                <p>
+                    No. 1
+                    
+                    Angeles Pampanga Electronics Appliances Repair And Home Service
+                    Place: TELEBASTAGAN, Angeles City, Philippines, 2000
+                    Email: philipnovida681986@gmail.com
+                    Messenger: Angeles Pampanga Electronics Appliances Repair And Home Service
+                    Phone number: 0936 940 5886
+
+                    No. 2
+
+                    A & D Plumbing And Electrical Services
+                    Place: 16 Esmeralda street Pangilinan Compound Barangay Tandang Sora Quezon City, 1116 Metro Manila Philippines
+                    Phone number: 09061195801
+
+                    No. 3
+
+                    HIGHTECH GADGET REPAIR SHOP
+                    place: 1152 Sitio Cubul, Angeles, 2009 Pampanga
+                    Phone number: 0935 078 0446
+         </p>
+
+                <h2>RRL</h2>
+                <p>
+                    Hemmendinger, D. (2023). computer | History, Networking, Operating Systems, & Facts. In Encyclopædia Britannica. https://www.britannica.com/technology/computer
+
+                    c.sayegh, & c.sayegh. (2024, October 22). Computer Disposal: A Comprehensive Guide | Landbell Canada. Landbell Canada; Landbell CA. https://landbellcanada.com/computer-disposal-a-comprehensive-guide/
+
+                    Baron, S. (2005, December 15). How to Safely Dispose of Old Computers: Complete Guide. WikiHow. https://www.wikihow.com/Safely-Get-Rid-of-an-Old-Computer
+
+                    Zaluzny, P. (2023, January 18). How to recycle your old computer, phone and other electronics - CHOICE. CHOICE. https://www.choice.com.au/electronics-and-technology/computers/desktop-and-laptop-computers/articles/recycle-old-computers#recycling-computers-near-me
+
+                    c.sayegh, & c.sayegh. (2024, October 22). Computer Disposal: A Comprehensive Guide | Landbell Canada. Landbell Canada; Landbell CA. https://landbellcanada.com/computer-disposal-a-comprehensive-guide/
+
+                    Marzullo, D. (2018, June 19). How to Recycle Old Computers. Hp.com; HP. https://www.hp.com/us-en/shop/tech-takes/how-to-recycle-old-computers
+
+                    Snyder, C. (2017, April 14). Five Ways to Recycle Your Computer - Talking Trash Blog. Talking Trash Blog. https://blog.cuyahogarecycles.org/five-ways-recycle-computers/
+
+                    Computer Hope. (2019). What Is a Printer? Computerhope.com. https://www.computerhope.com/jargon/p/printer.htm
+
+                    1PC eCycle. (2025, November 28). Printer Recycling: Easy Steps for a Sustainable Future. 1PC. https://www.1pc.com/blogs/guides-resources/printer-recycling-easy-steps-for-a-sustainable-future
+
+                    What is charger? Competitors, Complementary Techs & Usage. (2025, November). Sumble.com. https://sumble.com/tech/charger
+
+                    4THBIN. (2025). Old Cables and Chargers: Toss, Recycle, or Repurpose? | 4THBIN. 4thbin.com. https://www.4thbin.com/blog/what-to-do-with-old-cables-and-chargers
+                    
+                    How and where to safely recycle used chargers. (2025, September 25). Rubbishjunk.co.uk; Rubbish Junk. https://rubbishjunk.co.uk/blog/how-and-where-to-safely-recycle-used-chargers/
+                </p>
+
+            <!-- IMAGE -->
+            <div class="image"></div>
+
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="QR-popup" class="hidden">
+        <button onclick="document.getElementById('QR-popup').classList.add('hidden')">
+            Close
+        </button>
+    </div>
+
+    <script>
+        function AlertSetting() {
+            alert("This is a demo, setting is coming soon!");
+            document.getElementById("QR-popup").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Computer Info</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #EEE8DC, #F5F1E8);
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        /* NAVBAR */
+        .navibar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #E8E0D5;
+            padding: 15px;
+        }
+
+        a {
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        #NB1 {
+            border: 1px solid #0F0F0F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .navibar2 a:hover {
+            background: #0F0F0F;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+
+        .navibar3 {
+            border: none;
+            background: none;
+            width: 29px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .navibar3:hover {
+            background: #0F0F0F;
+            color: white;
+            transition: 0.25s;
+        }
+
+        /* TITLE */
+        .top {
+            text-align: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CLEAN LAYOUT */
+        .content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 250px;
+            height: 350px;
+            background-image: url(code.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #QR-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 120px;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navibar">
+        <div><a href="MainPage.html">E-Waste Hub PH</a></div>
+
+        <div class="navibar2">
+            <a href="LoginPage.html" id="NB1">
+                Sign Up <i class="fa-regular fa-user"></i>
+            </a>
+            <button onclick="AlertSetting()" class="navibar3">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="top">
+        <h1>Charger</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+
+            <!-- TEXT -->
+            <div class="text">
+
+                
+                
+                <h2>Device Information</h2>
+                <p>
+                    A charger is a device used to restore energy in a rechargeable battery or capacitor by forcing an electric current through it. Chargers are commonly used for multiple devices which includes mobile phones, laptops, electric vehicles, and power tools. They typically convert AC power from a wall outlet into DC power suitable for charging batteries. Different types of chargers exist, optimized for specific battery chemistries and charging rates.                </p>
+                    <h2>How to Dispose</h2>
+                <p>
+                  If your old chargers and cables are piling up, there are plenty of responsible and practical ways to handle them. Here's how you can ensure they're put to good use or disposed of safely:
+                  Donate to those in need: Many old chargers ad cables are still functional and can benefit someone else. Local charities, schools, or community centers often welcome donations of working tech accessories. These organizations use them for teaching purposes, supporting needy families, or even as spares for equipment. Additionally, some donation programs focus on repurposing tech accessories for underprivileged communities. Before donating it, make sure to check for frayed insulation, bent prongs, overheating history, ad compatibility (like voltage or amperage). Donate only safe, working accessories.
+                  Participate in E-waste collection drives: E-waste collection drives is an excellent opportunity to responsibly dispose of old chargers and cables while supporting community and environmental initiatives. These events provide a convenient solution for households to declutter and safely dispose of unused tech accessories. Unlike general recycling, which may not be equipped to handle e-waste, collection drives ensure that items like chargers and cables are correctly processed to minimize environmental impact. To find an e-waste collection drive near you, you can search online for local events or check announcements from your community center, school district, or local government. Many certified recyclers also host periodic drives and share schedules on their websites. By participating in these initiatives, you declutter your home and contribute to community sustainability efforts.
+                </p>
+
+                <h2>How to Recycle</h2>
+                <p>
+                  Used chargers is the most common types of e-waste generated in modern households and workplaces. With rapid advancement in technology and the frequent upgrading of electronic devices, millions of old and unused phone chargers, laptop adapters, and other power accessories are discarded each year. While these seems harmless, their improper disposal poses serious environmental and health risks. In proper preparation of chargers for recycling is essential. You can follow these simple steps:
+                  Bundle wires: Use twist-ties or a rubber band to neatly tie up cords, reducing the risk of tangling and ensuring easier handling during sorting.
+                  Clean off debris: Wipe away dust and dirt. This helps recycling centers process materials more efficiently.
+                  Disconnect and untangle: Unplug chargers from all devices and remove any attachments.
+                </p>
+                <h2>Electrical "Fixer" Place</h2>
+                <p>
+                    Smartphone fixer place:
+
+                   Service - Mobile phone repair
+
+                   Location - Pandacaqui, Mexico, pampangga
+
+                   Number: 0936-666-2644
+ 
+
+                   Service - Mobile phone repair
+
+                   Location - District 12 blk 91 lot 26, Pandacaqui Resettlement Road, Mexico, 2021 pampangga
+
+                   Number - 0967-522-2318
+         </p>
+
+                <h2>RRL</h2>
+                <p>
+               Frankenfield, J. (2020, December 27). Smartphone. Investopedia. https://www.investopedia.com/terms/s/smartphone.asp
+
+               Editorial. (2022, March 16). Mobile phone disposal | Everphone. Everphone. https://everphone.com/en/blog/phone-disposal/
+
+               Editorial. (2022, April 25). Disposal of old phones: Recycling your smartphone. Everphone. https://everphone.com/en/blog/old-phone-disposal/
+                </p>
+
+            <!-- IMAGE -->
+            <div class="image"></div>
+
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="QR-popup" class="hidden">
+        <button onclick="document.getElementById('QR-popup').classList.add('hidden')">
+            Close
+        </button>
+    </div>
+
+    <script>
+        function AlertSetting() {
+            alert("This is a demo, setting is coming soon!");
+            document.getElementById("QR-popup").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
