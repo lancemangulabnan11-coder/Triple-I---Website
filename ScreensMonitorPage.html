@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+                margin: 0;
+                
+        }
+
+        /* Top section */
+        .top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            border: 1px solid black;
+            margin-bottom: 5%;
+        }
+
+        .nav_container ul{
+            list-style-type: none;
+            background-color:antiquewhite ;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+            
+        }
+        .navbar a:hover {
+            background-color: black;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .navbar li {
+            float:left;
+            margin-left: 10%;
+            overflow-x: auto;
+        }
+        main {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        /* BOttom section */
+        .bottom {
+            display: flex; /* makes children horizontal */
+            justify-content: center;
+            align-items: center;
+            background-image: url(.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            border: 1px solid black;
+            width: 250px;
+        }
+        .box:hover {
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+            color: white; /* change text color to white for better visibility */
+            transition: background-color 0.3s ease; /* smooth transition */
+            cursor: pointer;
+        }
+        
+        
+        #Dev1, #Dev2, #Dev3 {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+
+        #Dev1 {
+            background-image: url(SurveyQR_2000x2000.png);
+        }
+        #Dev2 {
+            margin: 0 5% ; /* adds horizontal margin to the middle box */
+            background-image: url(SurveyQR_2000x2000.png);
+        }
+        #Dev3 {
+            background-image: url(SurveyQR_2000x2000.png);
+        }
+    </style>
+</head>
+<body>
+    <!-- TOP DIV -->
+    <div class="top">
+        Device Category
+    </div>
+
+    <div class="nav_container">
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h3>This is the Homepage</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nesciunt error cupiditate nemo illo minima, facere expedita optio veniam aspernatur eum quo, ab laudantium amet nulla at dignissimos? Culpa, at?</p>
+        </main>
+
+    </div>
+
+    <!-- BOTTOM 1x3 -->
+    <div class="bottom">
+        <a class="box" id="Dev1">Device 1</a>
+        <a class="box" id="Dev2">Device 2</a>
+        <a class="box" id="Dev3">Device 3</a>
+    </div>
+
+</body>
+</html>
