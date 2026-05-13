@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #e5d3c1;
+            color: white;
+            padding: 15px;
+        }
+        .navbar a {
+            color: #7D5842;
+            text-decoration: none;
+        }
+        #NB1{
+            border: 1px solid #7D5842;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        .navbar1 :hover{
+            
+            color: white;
+            
+        }
+        .navbar2 a:hover{
+            background: #7D5842;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+        .navbar3{
+            border: none;
+            padding: 5px 10px;
+            background: none;}
+        .navbar3:hover{
+            background: #7D5842;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
             body {
                 margin: 0;
                 
@@ -98,6 +138,11 @@
     </style>
 </head>
 <body>
+    <div class="navbar" >
+        <div class="navbar1"><a href="MainPage.html">E-Waste Hub PH</a></div>
+        <div class="navbar2"><a href="LoginPage.html" id="NB1">Sign Up <i class="fa-regular fa-user"></i></a>
+        <button onclick="AlertSetting()" class="navbar3"><i class="fa-solid fa-gear"></i></button></div>
+    </div>
     <!-- TOP DIV -->
     <div class="top">
         Device Category
