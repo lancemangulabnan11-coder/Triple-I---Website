@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .hidden{
+            display: none;
+        }
+        #orderMenu {
+            border: 1px solid black;
+            height: 60vh;
+            width: 50vh;
+            
+            text-align: center;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        #orderMenu img{
+            border: 1px solid black;
+            width: 30vh;
+            height: 30vh;
+            margin:4vh 10vh 2vh 10vh ;
+        }
+        .topDiv {
+            display:flex
+        }
+        .Menu{
+
+            width: 100%;
+        }
+        
+        .Menu ul{
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 1em; /* Optional spacing between cells */
+            width: 100%;
+        }
+        .Menu li{
+            
+            list-style-type: none;
+            border: 1px solid black;
+            height: 80vh;
+            text-align: center;
+            
+        }
+        .Menu img{
+            margin-top: 10vh;
+            width: 40vh;
+            height: 40vh;
+            
+        }
+        .topDiv{
+            background-color: rgb(232, 226, 226);
+            color: rgb(0, 0, 0);
+            height: 30vh;
+        }
+        .topDiv h1{
+            text-align: center;
+            width: 100%;
+            font-size: 5vh;
+            margin: 0;
+            line-height: 30vh;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="topDiv">
+        <h1>Otto's Menu</h1>
+    </div>
+    <div class="Menu">
+        <ul>
+            <li style="width: 65vh;">
+
+                <div class="menu-item" id="KwekKwek">
+                    <img src="test.jpg" alt="">
+                </div>
+                <h2>Kwek Kwek</h2>
+                <p>Nakasulat</p>
+                <h1>P67</h1>
+                    <button>Order</button>
+            </li>
+            <li class="menu-item" style="width: 65vh;">
+                <div class="menu-item" id="FishBall"></div>
+                    <img src="test.jpg" alt="">
+                    <h2>Fish Ball</h2>
+                    <p></p>
+                    <h1>P65</h1>
+                    <button>Order</button>
+            </li>
+            <li class="menu-item" style="width: 65vh;">
+                <div class="menu-item" id="Hotdog"></div>
+                <img src="test.jpg" alt=""> 
+                <div class="menu-Heading"><h2>Hotdog</h2></div>
+                <div class="menu-Paragraph"><p></p></div>
+                <div class="menu-Price "> </div>
+                    <div class="menu-Button"><button>Order</button></div>
+            </li>
+            <li class="menu-item" style="width: 65vh;">
+                <div class="menu-item" id="ChickenBall"></div>
+                <img src="test.jpg" alt="">
+                <div class="menu-Heading"><h2>Chicken Ball</h2></div>
+                <div class="menu-Paragraph"><p></p></div>
+                <div class="menu-Price "> </div>
+                    <div class="menu-Button"><button>Order</button></div>
+            </li>
+            <li class="menu-item" style="width: 65vh;">
+                <div class="menu-item" id="Kikiam"></div>    
+                <img src="test.jpg" alt="">
+                <div class="menu-Heading"><h2>Kikiam</h2></div>
+                <div class="menu-Paragraph"><p></p></div>
+                <div class="menu-Price "> </div>
+                    <div class="menu-Button"><button>Order</button></div>
+            </li>
+            <li class="menu-item" style="width: 65vh;">
+
+                <img src="test.jpg" alt="">
+                <div class="menu-Heading"><h2>Buko Juice</h2></div>
+                <div class="menu-Paragraph"><p></p></div>
+                <div class="menu-Price "> </div>
+                <div class="menu-Button"><button>Order</button></div>
+            </li>
+        </ul>
+        
+    </div>
+    <div class="Content">
+
+        <div class="hidden" id="orderMenu"> 
+            <img src="test.jp" alt="">
+            <h2>Kikiam</h2>
+            <button>-</button>
+            <button>+</button>
+
+        </div>
+
+        <div class="hidden" id="fishball" id="orderMenu">
+
+        </div>
+
+        <div class="hidden" id="hotdog" id="orderMenu">
+
+        </div>
+
+        <div class="hidden" id="chickenball" id="orderMenu">
+
+        </div>
+
+        <div class="hidden" id="kikiam" id="orderMenu">
+        </div>
+
+        <div class="hidden" id="bukojuice" id="orderMenu">
+            
+        </div>
+
+    </div>
+    <script>
+
+        let kwekKwek = document.getElementById("KwekKwek");
+        let fishball = document.getElementById("fishball");
+        let hotdog = document.getElementById("hotdog");
+        let chickenball = document.getElementById("chickenball");
+        let kikiam = document.getElementById("kikiam");
+        let bukojuice = document.getElementById("bukojuice");
+
+        function KKButton(){
+
+        }
+
+    </script>
+</body>
+</html>
