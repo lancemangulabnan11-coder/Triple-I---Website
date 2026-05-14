@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Small Appliance  Info</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #EEE8DC, #F5F1E8);
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        /* NAVBAR */
+        .navibar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #E8E0D5;
+            padding: 15px;
+        }
+
+        a {
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        #NB1 {
+            border: 1px solid #0F0F0F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .navibar2 a:hover {
+            background: #0F0F0F;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+
+        .navibar3 {
+            border: none;
+            background: none;
+            width: 29px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .navibar3:hover {
+            background: #0F0F0F;
+            color: white;
+            transition: 0.25s;
+        }
+
+        /* TITLE */
+        .top {
+            text-align: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CLEAN LAYOUT */
+        .content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 250px;
+            height: 350px;
+            background-image: url(code.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #QR-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 120px;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navibar">
+        <div><a href="MainPage.html">E-Waste Hub PH</a></div>
+
+        <div class="navibar2">
+            <a href="LoginPage.html" id="NB1">
+                Sign Up <i class="fa-regular fa-user"></i>
+            </a>
+            <button onclick="AlertSetting()" class="navibar3">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="top">
+        <h1>HairDryer</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+
+            <!-- TEXT -->
+            <div class="text">
+
+                
+                
+                <h2>Device Information</h2>
+                <p>
+                  A hair dryer, which is also called a blow dryer is a machine that blows warm air to style or dry hair. Hair dryers help people control the way their hair looks by making it dry faster and by helping to shape it. This is because hair dryers make bonds in the hair that help it stay in place. These bonds are strong. They do not last long and can be affected by humidity. When you wash your hair these bonds go away.
+                  When people use hair dryers to style their hair they can make it look nice and neat with a lot of volume. Using hair dryers with things like special hair products, hairbrushes and combs can make hair look even better by adding hold and lift. The first hair dryer was made a time ago in the late 1800s. Then in 1912 a man named Gabriel Kazanjian made the real hair dryer model. Later in 1920 people started making hair dryers that people could use at home. Now hair dryers are used by hair stylists in salons and by people, at home to make their hair look great.
+
+
+                <h2>How to Dispose</h2>
+                <p>
+                Check if there is any damage parts
+                (exposed wires, cracks, burning smell, melted parts). 
+                remove  any damaged units from usable ones. 
+                Pack it in a securely box or sturdy bag. 
+                If you are disposing of multiple units, use a container with a lid to prevent it from breaking.
+
+                </p>
+
+                <h2>How to Recycle</h2>
+                <p>
+                    Bring your hair dryer to a recycling center. 
+                    Donate it if it is still in good condition or still working. 
+                    make sure it is unplugged and cooled before recycling it. 
+                    Keep it intact so parts can be safely reused. 
+
+
+                <h2>Electrical "Fixer" Place</h2>
+                <p>
+                    Boss J Works - Technician
+                    In front of blue heights Subdivision, Joven street, Babo Sacan, Porac, 2008 Pampanga
+                    3G7V+P8 Porac, Pampanga
+                    0970 467 5262
+
+                </p>
+
+                <h2>RRL</h2>
+                <p>
+                   “Hair Dryer.” Wikipedia, 3 July 2020, en.wikipedia.org/wiki/Hair_dryer.
+
+            </div>
+
+            <!-- IMAGE -->
+            <div class="image">
+                <img src="HairDryer.jpg" alt="QR Code" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">  
+            </div>
+
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="QR-popup" class="hidden">
+        <button onclick="document.getElementById('QR-popup').classList.add('hidden')">
+            Close
+        </button>
+    </div>
+
+    <script>
+        function AlertSetting() {
+            alert("This is a demo, setting is coming soon!");
+            document.getElementById("QR-popup").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
