@@ -1,1 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Small Appliance  Info</title>
 
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #EEE8DC, #F5F1E8);
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        /* NAVBAR */
+        .navibar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #E8E0D5;
+            padding: 15px;
+        }
+
+        a {
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        #NB1 {
+            border: 1px solid #0F0F0F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .navibar2 a:hover {
+            background: #0F0F0F;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+
+        .navibar3 {
+            border: none;
+            background: none;
+            width: 29px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .navibar3:hover {
+            background: #0F0F0F;
+            color: white;
+            transition: 0.25s;
+        }
+
+        /* TITLE */
+        .top {
+            text-align: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CLEAN LAYOUT */
+        .content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 250px;
+            height: 350px;
+            background-image: url(code.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #QR-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 120px;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navibar">
+        <div><a href="MainPage.html">E-Waste Hub PH</a></div>
+
+        <div class="navibar2">
+            <a href="LoginPage.html" id="NB1">
+                Sign Up <i class="fa-regular fa-user"></i>
+            </a>
+            <button onclick="AlertSetting()" class="navibar3">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="top">
+        <h1>AirFryer</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+
+            <!-- TEXT -->
+            <div class="text">
+
+                
+                
+                <h2>Device Information</h2>
+                <p>
+                   an air fryer is a kitchen appliance used to cook food with hot air. it does not actually fry food like a fryer. it works like an oven that uses air to cook your food. you can use an air fryer to cook foods like fries, chicken, and more. air fryers are extremely useful for cooking a wide range of foods.<br>
+
+
+                <h2>How to Dispose</h2>
+                <p>
+                    To dispose of it first you unplug the air fryer and let it cool completely. next is to clean out food and wash removable parts. 
+                    Don't pour oil down the sink, let it cool, containerize it, and throw it in the trash. 
+                    Remove any detachable parts (basket, tray). Check the  warranty (you might get a replacement). wrap the cord and pack the unit in a box or bag. use junk removal services or town collection days if available. 
+
+                </p>
+
+                <h2>How to Recycle</h2>
+                <p>
+                    Take your air fryer to an electronic waste (e-waste) center so parts can be reused safely. you can use store take-back programs for appliances. if you want you can donate the air fryer if it still works or Sell it online.
+
+
+                <h2>Electrical "Fixer" Place</h2>
+                <p>
+                    Ground Floor Robinsons Place, Salome Street, Balibago
+                    Municipality/City
+                    Angeles City, Pampanga, Philippines
+                    Telephone Number
+                    (045) 8922739 </br>
+                </p>
+
+                <h2>RRL</h2>
+                <p>
+                   Reports, C. (2025, November 20). How to pick the perfect air fryer - Consumer reports. Consumer Reports. https://www.consumerreports.org/cro/air-fryers/buying-guide/index.htm<br></BR>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="image">
+                <img src="AirFryer.jpg" alt="QR Code" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="QR-popup" class="hidden">
+        <button onclick="document.getElementById('QR-popup').classList.add('hidden')">
+            Close
+        </button>
+    </div>
+
+    <script>
+        function AlertSetting() {
+            alert("This is a demo, setting is coming soon!");
+            document.getElementById("QR-popup").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
