@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Small Appliance  Info</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #EEE8DC, #F5F1E8);
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        /* NAVBAR */
+        .navibar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #E8E0D5;
+            padding: 15px;
+        }
+
+        a {
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        #NB1 {
+            border: 1px solid #0F0F0F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .navibar2 a:hover {
+            background: #0F0F0F;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+
+        .navibar3 {
+            border: none;
+            background: none;
+            width: 29px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .navibar3:hover {
+            background: #0F0F0F;
+            color: white;
+            transition: 0.25s;
+        }
+
+        /* TITLE */
+        .top {
+            text-align: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CLEAN LAYOUT */
+        .content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 250px;
+            height: 350px;
+            background-image: url(code.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #QR-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 120px;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navibar">
+        <div><a href="MainPage.html">E-Waste Hub PH</a></div>
+
+        <div class="navibar2">
+            <a href="LoginPage.html" id="NB1">
+                Sign Up <i class="fa-regular fa-user"></i>
+            </a>
+            <button onclick="AlertSetting()" class="navibar3">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="top">
+        <h1>Vacuum</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+
+            <!-- TEXT -->
+            <div class="text">
+
+                
+                
+                <h2>Device Information</h2>
+                <p>
+                    a vacuum cleaner, very known as a vacuum (or a hoover in the UK), is a device that uses suction, in order to remove dirt and other debris from carpets, hard floors, and other surfaces. the dirt is then collected into a dust bag. Vacuum cleaners are used in homes as well as in commercial settings, and have also a lot variety of sizes and types, including stick vacuums, handheld vacuums, upright vacuums, and canister vacuums. specialized shop vacuums can be used to clean both solid debris and liquids.
+
+
+                <h2>How to Dispose</h2>
+                <p>
+                    If recycling is not an option, for your vacuum cleaner you should check with your waste management company to see if they will take your vacuum cleaner when they pick up bulk trash. Some towns have days when they get rid of electronic waste and small appliances like vacuum cleaners.
+
+                </p>
+
+                <h2>How to Recycle</h2>
+                <p>
+                    Take your vacuum to a recycling center. 
+                    Donate or sell it if it still works or can be repaired. Repurpose parts (like using the motor for projects and any other parts that are reusable). 
+
+                    You can call the recycling center. Check their website to see if they will accept your vacuum cleaner. Some recycling centers want you to take out the filters or the dust bags from your vacuum cleaner before you bring it in.
+                    You need to empty your vacuum cleaner and take off any parts that cannot be recycled like the cloth bag or the foam filter or the flexible hose.
+                    If your vacuum cleaner has a battery that you can recharge you should take it out. Recycle it on its own.
+                    The recycling centers usually sort the metal parts, plastic, and the electronic parts of your vacuum cleaner so they can process it.
+
+
+                <h2>Electrical "Fixer" Place</h2>
+                <p>
+                    tv ref and all electronics electrict appliances repair shop
+                    3106 Kalayaan Rd, Angeles, Pampanga
+                    located in:Pampang Public Market, Public Market, Richthofen St, Angeles, 2009 Pampanga
+                    0956 926 7794
+
+                </p>
+
+                <h2>RRL</h2>
+                <p>
+                   Wikipedia Contributors. “Vacuum Cleaner.” Wikipedia, Wikimedia Foundation, 29 Jan. 2019, en.wikipedia.org/wiki/Vacuum_cleaner.
+
+            </div>
+
+            <!-- IMAGE -->
+            <div class="image">
+                <img src="Vacuum.jpg" alt="QR Code" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="QR-popup" class="hidden">
+        <button onclick="document.getElementById('QR-popup').classList.add('hidden')">
+            Close
+        </button>
+    </div>
+
+    <script>
+        function AlertSetting() {
+            alert("This is a demo, setting is coming soon!");
+            document.getElementById("QR-popup").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
