@@ -34,7 +34,6 @@
             display:flex
         }
         .Menu{
-
             width: 100%;
         }
         
@@ -50,23 +49,36 @@
             
             list-style-type: none;
             border: 1px solid black;
-            height: 80vh;
+            height: 75vh;
             text-align: center;
             
         }
         .menu-img{
             margin-top: 10vh;
             width: 40vh;
-            height: 40vh;
- background-image: url(sample.jpg);
+            border: none;
+            background-image: url(sample.jpg);
             background-size: cover;
             background-position: center;
+            margin-top: 4vh;
+
+            width: 40vh;
+            height: 40vh;
+
+            border: none;
+            cursor: pointer;
+
+            background-size: cover;
+            background-position: center;
+            background-color: transparent;
         }
-        #KwekKwek{
-       
-        background-size: cover;
-        background-position: center;
+        .menu-img:hover{
+            filter: brightness(80%);
+            transition: filter 0.3s ease;
+            cursor: pointer;
         }
+            /* =========================================
+                NAVBAR*/
 
         .topDiv{
             background-color: rgb(232, 226, 226);
@@ -81,7 +93,39 @@
             line-height: 30vh;
         }
         
+        
 
+        .menu-item h2{
+            margin-top: 12vh;
+            margin-bottom: 2vh;
+            text-align: left;
+            margin-left: 3vh;
+        }
+
+        .menu-item p{
+            margin-top: 1vh;
+            text-align: left;
+            color: gray;
+            margin: 0vh 4vh 3vh;
+        }
+
+        .bottom-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-top: auto;
+            margin: 0vh 4vh 0vh;
+        }
+
+        .bottom-row h1{
+            margin: 0;
+        }
+
+        .order-btn{
+            padding: 1vh 3vh;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -90,59 +134,83 @@
     </div>
     <div class="Menu">
         <ul>
-            <li class="menu-item" style="width: 65vh;" >
+            <li class="menu-item" style="width: 65vh;">
 
-                <button class="menu-img" id="KwekKwek">
-                </button>
+                <button class="menu-img" id="KwekKwek"></button>
+
                 <h2>Kwek Kwek</h2>
-                <p>Nakasulat</p>
-                <h1>P67</h1>
-                <button>Order</button>
+                <p>Crunchy golden quail eggs coated in savory orange batter. A popular Filipino street food best served with sweet and spicy sauce.</p>
+
+                <div class="bottom-row">
+                    <h1>₱67</h1>
+                    <button class="order-btn">Order</button>
+                </div>
             </li>
+
             <li class="menu-item" style="width: 65vh;">
-                <button class="menu-img" id="FishBall">
-                </button>
-                    <img src="test.jpg" alt="">
-                    <h2>Fish Ball</h2>
-                    <p></p>
-                    <h1>P65</h1>
-                    <button>Order</button>
+
+                <button class="menu-img" id="FishBall"></button>
+
+                <h2>Fish Ball</h2>
+                <p>Soft and chewy fish balls cooked fresh on the spot. Perfect with classic street-style sweet sauce.</p>
+
+                <div class="bottom-row">
+                    <h1>₱65</h1>
+                    <button class="order-btn">Order</button>
+                </div>
             </li>
+
             <li class="menu-item" style="width: 65vh;">
-                <button class="menu-img" id="Hotdog">
-                </button >
-                <img src="test.jpg" alt=""> 
-                <div class="menu-Heading"><h2>Hotdog</h2></div>
-                <div class="menu-Paragraph"><p></p></div>
-                <div class="menu-Price "> </div>
-                    <div class="menu-Button"><button>Order</button></div>
+
+                <button class="menu-img" id="Hotdog"></button>
+
+                <h2>Hotdog</h2>
+                <p>Juicy hotdogs grilled until lightly smoky and tender. A simple but satisfying favorite for any snack break.</p>
+
+                <div class="bottom-row">
+                    <h1>₱55</h1>
+                    <button class="order-btn">Order</button>
+                </div>
+
             </li>
+
             <li class="menu-item" style="width: 65vh;">
-                <button class="menu-img" id="ChickenBall">
-                </button>
-                <img src="test.jpg" alt="">
-                <div class="menu-Heading"><h2>Chicken Ball</h2></div>
-                <div class="menu-Paragraph"><p></p></div>
-                <div class="menu-Price "> </div>
-                    <div class="menu-Button"><button>Order</button></div>
+
+                <button class="menu-img" id="ChickenBall"></button>
+
+                <h2>Chicken Ball</h2>
+                <p>Crispy chicken balls packed with flavorful seasoning. Best enjoyed hot and fresh with dipping sauce.</p>
+
+                <div class="bottom-row">
+                    <h1>₱70</h1>
+                    <button class="order-btn">Order</button>
+                </div>
             </li>
+
             <li class="menu-item" style="width: 65vh;">
-                <button class="menu-img" id="Kikiam">
-                </button>
-                <img src="test.jpg" alt="">
-                <div class="menu-Heading"><h2>Kikiam</h2></div>
-                <div class="menu-Paragraph"><p></p></div>
-                <div class="menu-Price "> </div>
-                    <div class="menu-Button"><button>Order</button></div>
+
+                <button class="menu-img" id="Kikiam"></button>
+
+                <h2>Kikiam</h2>
+                <p>Sweet and savory kikiam slices fried to crispy perfection. A tasty street food classic loved by many.</p>
+
+                <div class="bottom-row">
+                    <h1>₱60</h1>
+                    <button class="order-btn">Order</button>
+                </div>
             </li>
+
             <li class="menu-item" style="width: 65vh;">
-                <button class="menu-img" id="BukoJuice">
-                </button>
-                <img src="test.jpg" alt="">
-                <div class="menu-Heading"><h2>Buko Juice</h2></div>
-                <div class="menu-Paragraph"><p></p></div>
-                <div class="menu-Price "> </div>
-                <div class="menu-Button"><button>Order</button></div>
+
+                <button class="menu-img" id="BukoJuice"></button>
+
+                <h2>Buko Juice</h2>
+                <p>Refreshing coconut juice served cold and naturally sweet. A perfect drink to cool down on a hot day.</p>
+
+                <div class="bottom-row">
+                    <h1>₱45</h1>
+                    <button class="order-btn">Order</button>
+                </div>
             </li>
         </ul>
         
