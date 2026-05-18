@@ -1,1 +1,522 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Computer Info</title>
 
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #EEE8DC, #F5F1E8);
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        /* NAVBAR */
+        .navibar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #E8E0D5;
+            padding: 15px;
+        }
+
+        a {
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        #NB1 {
+            border: 1px solid #0F0F0F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .navibar2 a:hover {
+            background: #0F0F0F;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+
+        .navibar3 {
+            border: none;
+            background: none;
+            width: 29px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .navibar3:hover {
+            background: #0F0F0F;
+            color: white;
+            transition: 0.25s;
+        }
+
+        /* TITLE */
+        .top {
+            text-align: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CLEAN LAYOUT */
+        .content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 250px;
+            height: 350px;
+            background-image: url(code.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #QR-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 120px;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navibar">
+        <div><a href="MainPage.html">E-Waste Hub PH</a></div>
+
+        <div class="navibar2">
+            <a href="LoginPage.html" id="NB1">
+                Sign Up <i class="fa-regular fa-user"></i>
+            </a>
+            <button onclick="AlertSetting()" class="navibar3">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="top">
+        <h1>Monitor</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+
+            <!-- TEXT -->
+            <div class="text">
+
+                
+                
+                <h2>Device Information</h2>
+                <p>
+                    Monitors are complete electronic display units designed to connect to computers, laptops, or other systems to output visual information. They are classified as e-waste when they stop functioning, become outdated, or are discarded. <br>
+                    Common types include:
+                    • CRT (Cathode Ray Tube) monitors – older, bulkier models
+                    • LCD/LED flat-panel monitors – modern slimline types
+                    • Computer monitors for home or office use
+                    • Professional or industrial display monitors<br><br>
+
+                    They are made up of more components than just the screen, including casings, circuit boards, power supplies, and connecting ports. They contain valuable materials such as copper wiring, aluminum frames, steel, plastic, and precious metals found in circuit boards, as well as hazardous substances like lead (especially in older CRT units), cadmium, mercury, and brominated flame retardants. Improper disposal can cause soil and water contamination, and exposure may lead to damage to the nervous system, kidneys, and other organs.<br><br>
+
+                    Includes computer monitors, desktop display units, and separate display screens used with computing devices<br><br>
+
+                    According to Globe Telecom (2025), monitors are grouped under the "Screens and monitors" category and contain toxic components such as heavy metals and chemical compounds that pose risks to human health and the natural environment. There are several proper ways to dispose of them: they can be sold to businesses like HMR Trading Haus if they are still usable, turned over to accredited recycling facilities such as HMR Envirocycle, or dropped off at collection points in SM Supermalls and university-led projects like The E-Waste Project at UP Diliman.<br><br>
+
+                    From ecyclingcentral.com (2026), monitors are accepted at facilities including the National Capital Region E-Waste Management Facility and collection points managed by the Philippine Association of Electronic Recyclers Inc. They are also among the standard items accepted in take-back programs offered by major service providers and brands such as Globe Telecom, Smart Communications, and PLDT. National regulations require that monitors be disposed of responsibly to prevent pollution and health hazards.<br><br>
+
+                    Information from SM Cyberzone (2025) confirms that monitors are specifically included in the items accepted through SM’s e-waste collection program. Collection boxes are available in all participating mall branches, making it easy for the public to dispose of old or broken monitors correctly. These collection activities are carried out in partnership with PLDT Home and Smart Communications.<br><br>
+
+                    Based on details from the Department of Environment and Natural Resources (2022), monitors are processed in formal Treatment, Storage, and Disposal facilities that are accredited by the government. All handling and processing follow strict environmental standards to ensure that hazardous materials are managed safely and that components are either recycled or disposed of without causing damage to ecosystems or public health.<br><br>
+
+                    Research from Semantic Scholar (2024) notes that monitors fall under the same category as other screen-related devices in waste classification systems. Complete units are typically valued at ₱20 each in local junkshops, while incomplete ones are priced by weight. Residual materials generated during dismantling include glass and plastic parts, which are often challenging to reuse or recycle.<br><br>
+
+                    Reports from the Philippine Canadian Inquirer (2024) show that monitors are among the items collected in large-scale waste management campaigns led by the Department of Environment and Natural Resources. These efforts have gathered thousands of tons of this type of electronic waste to ensure it is managed properly.<br><br>
+
+                    Guidance from ABS-CBN (2024) provides practical steps for handling monitors, advising users to store them appropriately first and then coordinate with local authorities or relevant government agencies for safe disposal. They are classified as hazardous waste and should not be discarded with regular trash.<br><br>
+
+                    As stated in the document from the Senate of the Philippines (2018), monitors are covered under laws that require computer manufacturers to establish facilities and systems for collecting and recovering their products. These regulations aim to make sure that even after use, these devices are managed in an environmentally responsible way.<br><br>
+
+                </p>
+                    <h2>How to Dispose</h2>
+                <p>
+                    If you no longer need your old monitors, here are the responsible ways to handle them in the Philippines:<br><br>
+
+                    Donate or resell
+                    If the monitor is still working properly, you can donate it to schools, community centers, small businesses, or non-profit organizations. You may also sell it to second-hand electronics stores like HMR Trading Haus, which buys used monitors, refurbishes working units, and processes non-working ones safely.
+                    • HMR Trading Haus Address: Pioneer Street corner Reliance Street, Mandaluyong City
+                    • Contact: 0917 875 8657 / 0917 830 7717<br><br>
+
+                    Participate in collection drives
+                    Many organizations and local governments hold collection events specifically for larger electronics. The E-Waste Project accepts monitors during their scheduled drives, and SM Supermalls’ "Trash to Cash" program also accepts them during collection days, usually held every Friday and Saturday from 10:00 AM to 2:00 PM.<br><br>
+
+                    Use take-back programs
+                    Technology brands such as Apple, Samsung, and HP offer take-back or trade-in programs where you can return old monitors for proper recycling, sometimes in exchange for discounts on new products. Telecommunication providers including Globe, Smart, and PLDT also accept monitors through their nationwide collection initiatives.<br><br.
+
+                    Contact local authorities
+                    Following DENR guidelines, store the monitor in a dry and secure location, and coordinate with your Barangay officials. They will arrange for proper collection and transfer to authorized treatment facilities that are equipped to handle larger electronic units.<br><br>
+
+
+                </p>
+
+                <h2>How to Recycle</h2>
+                <p>
+                    Recycling monitors allows valuable materials to be recovered and reused, while ensuring hazardous components are handled safely. Follow these steps:<br><br>
+
+                    • Prepare the items: Remove all attached accessories such as cables, stands, and adapters. Clean off dust and dirt. If the unit is damaged or has exposed internal parts, ensure it is secured properly to prevent injury or leakage of harmful materials.<br><br>
+
+                    • Choose an accredited facility: Select DENR-authorized recyclers or organizations like the Philippine Association of Electronic Recyclers Inc. (PAERI), which operate under strict environmental and safety regulations.<br><br>
+
+                    • Drop off or arrange collection: You may bring monitors directly to collection points or facilities such as the National Capital Region E-Waste Management Facility in Parañaque City. Note that due to their size and weight, some facilities may charge a small handling fee for larger units like CRT monitors.<br><br>
+
+                    • Ensure proper processing: Certified recyclers carefully dismantle the units, sort materials for recovery, and treat or dispose of hazardous substances in compliance with environmental laws.<br><br>
+
+                    Additional Information & Options<br><br>
+
+                    • Republic Act No. 9003 (Ecological Solid Waste Management Act of 2000): Requires proper waste segregation and disposal, and prohibits discarding e-waste along with regular trash, as it contains materials that can harm the environment and public health.<br><br>
+
+                    • Proposed Legislation: Bills are being considered to enforce "manufacturer responsibility," requiring electronics producers to establish free collection and recycling systems for their products.<br><br>
+
+                    Accredited Recycling Facilities & Programs<br><br>
+
+                    • Envirocycle Philippines, Inc.: A DENR-accredited Treatment, Storage and Disposal (TSD) facility that handles all types of monitors, including both CRT and flat-panel displays. Website: http://www.envirocycle-inc.com<br><br>
+
+                    • HMR Envirocycle: Accepts monitors and other electronic items for recycling or processing. Locations: Calamba City and Mandaluyong City. Contact: 0917 834 9596<br><br>
+
+                    • SM Supermalls E-Waste Collection Program: Provides dedicated collection points in 68 Cyberzone branches and 20 other malls nationwide, operated in partnership with PLDT and Smart.<br><br>
+
+                    • Community-based TSD Facility (Malabon): Launched in 2022, this facility processes up to 15,000 CRT units annually and also provides training to informal recyclers on safe handling and processing methods.<br><br>
+
+                    Economic Value<br><br>
+
+                    Monitors retain value even when they are no longer usable for their original purpose:
+                    • Complete CRT Monitor: ₱20 – ₱50 per unit
+                    • Incomplete/Damaged CRT Monitor: ₱5 – ₱10 per kilogram
+                    • Complete Flat Panel LCD/LED Monitor: ₱20 – ₱100 per unit
+                    • Damaged/Non-working Flat Panel Monitor: ₱2 – ₱15 per unit<br><br>
+
+                </p>
+                <h2>Electrical "Fixer" Place</h2>
+                <p>
+                   1. Nepo Mall / Angeles Electric Shopping Area
+                  • Location: Along Rizal Avenue or Santo Rosario Street (Near the old public market area).
+                  • What they do: This is the primary destination for monitor repair in the area. There are numerous technicians and service shops that specialize in troubleshooting and repairing all types of computer monitors.
+                  • Best for: Fixing issues such as power failure, no display, black screen, flickering images, color distortion, horizontal or vertical lines on screen, and replacing faulty power boards or circuit components.<br><br>
+
+                  2. Jenra Mall / Mall Area Repair Stalls
+                  • Location: Downtown Angeles City.
+                  • What they do: Several small service stalls and shops inside and around the mall offer repair and troubleshooting services for monitors of all brands and types.<br><br>
+
+                  3. HMR Trading Haus (Angeles Branch)
+                  • Note: While they mainly sell surplus electronics and appliances, their staff can provide information or refer you to trusted technicians and service providers in the area.
+                  • Location: Fil-Am Friendship Highway, Angeles City.<br><br>
+
+                  4. Along Friendship Highway / Balibago Area
+                  • There are many "Electronics Service Center" type shops scattered along the main highways. Look for signboards that say:
+                  • "TV & Appliances Repair"
+                  • "Electronics Service Center"
+                  • "Computer Repair & Servicing"<br><br>
+
+                  What to look for in a "Fixer":
+                  • Look for shops with signs that specifically mention "Monitor Repair" or "Computer Servicing".
+                  • Ask if they service both old CRT models and modern flat-panel monitors.
+                  • Common issues they fix: Power problems, display failure, overheating, distorted images, and component replacement.<br><br>
+
+                  How to find them easily:
+                  You can also search on Google Maps or Facebook Marketplace using these keywords while you are in Angeles City:
+                  "Monitor repair Angeles City"
+                  "Computer repair shop Pampanga"
+                  "Electronics servicing near me"<br><br>
+
+
+                <h2>RRL</h2>
+                <p>
+                   • Globe Telecom. (2025). Electronic Waste Disposal: Where to Sell and Donate. https://www.globe.com.ph/blog/electronic-waste-disposal<br><br>
+                   • ecyclingcentral.com. (2026). Manila E-Waste Recycling - Where to Recycle Electronics. https://ecyclingcentral.com/areas/manila<br><br>
+                   • SM Cyberzone. (2025). Cyberzone Partners with SM Cares to Power Sustainability Initiatives. https://www.smcyberzone.com/updates-and-reviews/cyberzone-partners-with-sm-cares-to-power-sustainability-initiatives<br><br>
+                   • DENR. (2022). Recycling facility for e-waste launched. https://www.denr.gov.ph/images/DENR_NEWS_ALERTS_2022/DENR_News_Alerts_March_28_2022_Monday_opt.pdf<br><br>
+                   • Semantic Scholar. (2024). Inventory of Electronic Waste (E-Waste) and Residues in Junkshops. https://pdfs.semanticscholar.org/fcab/8a02d51f391868b1567522a77e484f160429.pdf<br><br>
+                   • Philippine Canadian Inquirer. (2024). DENR collects over 2K tons of e-waste. https://canadianinquirer.net/2024/09/19/denr-collects-over-2k-tons-of-e-waste/<br><br>
+                   • ABS-CBN. (2024). What to do with your e-waste? Store first and contact brgy, DENR says. https://www.abs-cbn.com/lifestyle/2024/9/18/what-to-do-with-your-e-waste-store-first-and-contact-bgy-denr-says-1954<br><br>
+                   • Senate of the Philippines. (2018). AN ACT REQUIRING THE MANUFACTURERS OF COMPUTERS TO PROVIDE RECOVERY AND COLLECTION FACILITIES FOR THEIR PRODUCTS. http://legacy.senate.gov.ph/lisdata/1811315358!.pdf<br><br>
+
+
+            <!-- IMAGE -->
+            <div class="image"></div>
+
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="QR-popup" class="hidden">
+        <button onclick="document.getElementById('QR-popup').classList.add('hidden')">
+            Close
+        </button>
+    </div>
+
+    <script>
+        function AlertSetting() {
+            alert("This is a demo, setting is coming soon!");
+            document.getElementById("QR-popup").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Computer Info</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #EEE8DC, #F5F1E8);
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        /* NAVBAR */
+        .navibar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #E8E0D5;
+            padding: 15px;
+        }
+
+        a {
+            color: #0F0F0F;
+            text-decoration: none;
+        }
+
+        #NB1 {
+            border: 1px solid #0F0F0F;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .navibar2 a:hover {
+            background: #0F0F0F;
+            color: white;
+            border-radius: 10px;
+            transition: 0.25s;
+        }
+
+        .navibar3 {
+            border: none;
+            background: none;
+            width: 29px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .navibar3:hover {
+            background: #0F0F0F;
+            color: white;
+            transition: 0.25s;
+        }
+
+        /* TITLE */
+        .top {
+            text-align: center;
+            padding: 60px 20px 20px 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* CLEAN LAYOUT */
+        .content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .text {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .image {
+            flex: 1;
+            min-width: 250px;
+            height: 350px;
+            background-image: url(code.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 5px 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #QR-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 120px;
+            border-radius: 10px;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navibar">
+        <div><a href="MainPage.html">E-Waste Hub PH</a></div>
+
+        <div class="navibar2">
+            <a href="LoginPage.html" id="NB1">
+                Sign Up <i class="fa-regular fa-user"></i>
+            </a>
+            <button onclick="AlertSetting()" class="navibar3">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="top">
+        <h1>Charger</h1>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+        <div class="content">
+
+            <!-- TEXT -->
+            <div class="text">
+
+                
+                
+                <h2>Device Information</h2>
+                <p>
+                    A charger is a device used to restore energy in a rechargeable battery or capacitor by forcing an electric current through it. Chargers are commonly used for multiple devices which includes mobile phones, laptops, electric vehicles, and power tools. They typically convert AC power from a wall outlet into DC power suitable for charging batteries. Different types of chargers exist, optimized for specific battery chemistries and charging rates.                </p>
+                    <h2>How to Dispose</h2>
+                <p>
+                  If your old chargers and cables are piling up, there are plenty of responsible and practical ways to handle them. Here's how you can ensure they're put to good use or disposed of safely:
+                  Donate to those in need: Many old chargers ad cables are still functional and can benefit someone else. Local charities, schools, or community centers often welcome donations of working tech accessories. These organizations use them for teaching purposes, supporting needy families, or even as spares for equipment. Additionally, some donation programs focus on repurposing tech accessories for underprivileged communities. Before donating it, make sure to check for frayed insulation, bent prongs, overheating history, ad compatibility (like voltage or amperage). Donate only safe, working accessories.
+                  Participate in E-waste collection drives: E-waste collection drives is an excellent opportunity to responsibly dispose of old chargers and cables while supporting community and environmental initiatives. These events provide a convenient solution for households to declutter and safely dispose of unused tech accessories. Unlike general recycling, which may not be equipped to handle e-waste, collection drives ensure that items like chargers and cables are correctly processed to minimize environmental impact. To find an e-waste collection drive near you, you can search online for local events or check announcements from your community center, school district, or local government. Many certified recyclers also host periodic drives and share schedules on their websites. By participating in these initiatives, you declutter your home and contribute to community sustainability efforts.
+                </p>
+
+                <h2>How to Recycle</h2>
+                <p>
+                  Used chargers is the most common types of e-waste generated in modern households and workplaces. With rapid advancement in technology and the frequent upgrading of electronic devices, millions of old and unused phone chargers, laptop adapters, and other power accessories are discarded each year. While these seems harmless, their improper disposal poses serious environmental and health risks. In proper preparation of chargers for recycling is essential. You can follow these simple steps:
+                  Bundle wires: Use twist-ties or a rubber band to neatly tie up cords, reducing the risk of tangling and ensuring easier handling during sorting.
+                  Clean off debris: Wipe away dust and dirt. This helps recycling centers process materials more efficiently.
+                  Disconnect and untangle: Unplug chargers from all devices and remove any attachments.
+                </p>
+                <h2>Electrical "Fixer" Place</h2>
+                <p>
+                    Smartphone fixer place:
+
+                   Service - Mobile phone repair
+
+                   Location - Pandacaqui, Mexico, pampangga
+
+                   Number: 0936-666-2644
+ 
+
+                   Service - Mobile phone repair
+
+                   Location - District 12 blk 91 lot 26, Pandacaqui Resettlement Road, Mexico, 2021 pampangga
+
+                   Number - 0967-522-2318
+         </p>
+
+                <h2>RRL</h2>
+                <p>
+               Frankenfield, J. (2020, December 27). Smartphone. Investopedia. https://www.investopedia.com/terms/s/smartphone.asp
+
+               Editorial. (2022, March 16). Mobile phone disposal | Everphone. Everphone. https://everphone.com/en/blog/phone-disposal/
+
+               Editorial. (2022, April 25). Disposal of old phones: Recycling your smartphone. Everphone. https://everphone.com/en/blog/old-phone-disposal/
+                </p>
+
+            <!-- IMAGE -->
+            <div class="image"></div>
+
+        </div>
+    </main>
+
+    <!-- POPUP -->
+    <div id="QR-popup" class="hidden">
+        <button onclick="document.getElementById('QR-popup').classList.add('hidden')">
+            Close
+        </button>
+    </div>
+
+    <script>
+        function AlertSetting() {
+            alert("This is a demo, setting is coming soon!");
+            document.getElementById("QR-popup").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
